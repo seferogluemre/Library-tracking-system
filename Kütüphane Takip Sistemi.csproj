@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03DDF553-2028-451C-A19C-4D85050C78A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kütüphane_Takip_Sistemi</RootNamespace>
+    <AssemblyName>Kütüphane Takip Sistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>kurulum\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>08A3536FD3478614D00D93A3798455E178D92B28</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Kütüphane Takip Sistemi_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAdminguncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminguncelleme.Designer.cs">
+      <DependentUpon>FrmAdminguncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminKayıt.Designer.cs">
+      <DependentUpon>FrmAdminKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminpanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminpanel.Designer.cs">
+      <DependentUpon>FrmAdminpanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminGiriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminGiriş.Designer.cs">
+      <DependentUpon>FrmAdminGiriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnasaya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnasaya.Designer.cs">
+      <DependentUpon>FrmAnasaya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAyrıntılıSorgular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAyrıntılıSorgular.Designer.cs">
+      <DependentUpon>FrmAyrıntılıSorgular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaşlangıç,.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaşlangıç,.Designer.cs">
+      <DependentUpon>FrmBaşlangıç,.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKitapEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKitapEkleme.Designer.cs">
+      <DependentUpon>FrmKitapEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKitapKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKitapKontrol.Designer.cs">
+      <DependentUpon>FrmKitapKontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullanıcıGiriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullanıcıGiriş.Designer.cs">
+      <DependentUpon>FrmKullanıcıGiriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullanıcıKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullanıcıKayıt.Designer.cs">
+      <DependentUpon>FrmKullanıcıKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmÖgrenciKitap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmÖgrenciKitap.Designer.cs">
+      <DependentUpon>FrmÖgrenciKitap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmÖgrenciSorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmÖgrenciSorgu.Designer.cs">
+      <DependentUpon>FrmÖgrenciSorgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quit.cs" />
+    <Compile Include="Sql.cs" />
+    <EmbeddedResource Include="FrmAdminguncelleme.resx">
+      <DependentUpon>FrmAdminguncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminKayıt.resx">
+      <DependentUpon>FrmAdminKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminpanel.resx">
+      <DependentUpon>FrmAdminpanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminGiriş.resx">
+      <DependentUpon>FrmAdminGiriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnasaya.resx">
+      <DependentUpon>FrmAnasaya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAyrıntılıSorgular.resx">
+      <DependentUpon>FrmAyrıntılıSorgular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaşlangıç,.resx">
+      <DependentUpon>FrmBaşlangıç,.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKitapEkleme.resx">
+      <DependentUpon>FrmKitapEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKitapKontrol.resx">
+      <DependentUpon>FrmKitapKontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullanıcıGiriş.resx">
+      <DependentUpon>FrmKullanıcıGiriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullanıcıKayıt.resx">
+      <DependentUpon>FrmKullanıcıKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmÖgrenciKitap.resx">
+      <DependentUpon>FrmÖgrenciKitap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmÖgrenciSorgu.resx">
+      <DependentUpon>FrmÖgrenciSorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Kütüphane Takip Sistemi_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Appicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
