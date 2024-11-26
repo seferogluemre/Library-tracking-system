@@ -1,16 +1,15 @@
-------KÜTÜPHANE TAKİP SİSTEMİ ----------
+Library Management System
 
-Selamlar Bu C# Projemde 
---Projede Admin Ve Kullanıcı Yetkileri bulunmaktadır
---Kullanıcı yetkileri -------
---Kullanıcılarda Ögrenci Kitap Kaydı İşlemleri Ve Ögrencinin üzerinde Numara,İsim Sorguları ve Sınıf sorguları atılabilmektedir 
---Ek Olarak Kullanıcı Sisteme kitap ekleme işlemleri yapabilmektedir Ve Kitaplar üzerinde Numara,Kitad Ad,Yazar sorguları yapabilmektedir
+Hello, in this C# project, there are both admin and user roles with specific functionalities:
 
---Admin Yetkileri------
---Admin panelinde Kitap Güvenliginin saglanması İçin - 15 günü aşkın  süredir kitabı teslim etmeyen ögrenciler ve bilgileri gözükmektedir
---Sınıf Sorguları ve Teslim eden ve etmeyen ögrenci sorguları
---Belirli Bir numara aralıgında ögrenci sorguları
---İsim Baş harfi girerek hangi ögrencilerin oldugunu ögrenme
---Ve Kitabı teslim etmeyen ögrenciler için Excelde tablo oluşturabiliyor
---Aktif Kayıtlı kullanıcıları görüntüleyebilme Ve Adminleri görüntüleyebilme
+User Roles:
 
+Users can manage student book registrations and query students by their number, name, and class.
+Additionally, users can add books to the system and search books by their number, title, and author.
+Admin Roles:
+
+The admin panel ensures the security of books by listing students who have not returned books after 15 days, along with their information.
+Admins can query students by class, identify students who have or haven't returned books, and search for students within a specific number range.
+Admins can also find students by entering the first letter of their name.
+The system allows the creation of an Excel report for students who haven’t returned books.
+Admins can view active registered users and other admins.
